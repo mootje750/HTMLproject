@@ -1,3 +1,7 @@
+document.querySelectorAll('img').forEach(img => {
+    img.ondragstart = () => false;
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     const homeSection = document.getElementById("home");
     const infoSection = document.getElementById("information");
@@ -27,3 +31,4 @@ document.addEventListener("DOMContentLoaded", function() {
         showSection(infoSection, homeSection);
     });
 });
+
